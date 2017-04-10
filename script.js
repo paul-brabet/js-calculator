@@ -7,13 +7,15 @@
 
      $('#AC').click(function() {
          $('#screen').text('');
+         joined = '';
+         arr = [];
 
      });
 
 
      $('#divide').click(function() {
          $('#screen').text($('#screen').text() + '/')
-arr.push('/');
+         arr.push('/');
      });
 
      $('#multiply').click(function() {
@@ -33,14 +35,18 @@ arr.push('/');
          let joined = arr.join('')
          joined = eval(joined);
          $('#screen').html(joined);
+         console.log(joined);
 
      });
 
      $('#minus').click(function() {
          $('#screen').text($('#screen').text() + '-')
-arr.push('-');
+         arr.push('-');
      });
-
+     $('#decimal').click(function() {
+         $('#screen').text($('#screen').text() + '.')
+         arr.push('.');
+     });
 
      $('#9').click(function() {
          $('#screen').text($('#screen').text() + 9)
@@ -57,33 +63,38 @@ arr.push('-');
 
      $('#6').click(function() {
          $('#screen').text($('#screen').text() + 6)
+         arr.push('6');
+
      });
 
      $('#5').click(function() {
          $('#screen').text($('#screen').text() + 5)
+         arr.push('5');
 
      });
      $('#4').click(function() {
          $('#screen').text($('#screen').text() + 4)
+         arr.push('4');
      });
 
      $('#3').click(function() {
          $('#screen').text($('#screen').text() + 3)
+         arr.push('3');
 
      });
 
      $('#2').click(function() {
          $('#screen').text($('#screen').text() + 2)
-
+         arr.push('2');
      });
 
      $('#1').click(function() {
          $('#screen').text($('#screen').text() + 1)
-
+         arr.push('1');
      });
      $('#0').click(function() {
          $('#screen').text($('#screen').text() + 0)
-
+         arr.push('0');
      });
 
 
