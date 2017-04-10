@@ -35,7 +35,8 @@
          let joined = arr.join('')
          joined = eval(joined);
          $('#screen').html(joined);
-         console.log(joined);
+
+
 
      });
 
